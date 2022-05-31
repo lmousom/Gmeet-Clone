@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinWithCode">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GmeetClone.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/setting_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgColor"
+            android:longClickable="false"
+            app:collapseIcon="@drawable/back"
+            app:navigationIcon="@drawable/back"
+            app:popupTheme="@style/Theme.GmeetClone.PopupOverlay"
+            app:title="Join with a code"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_join_with_code" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
